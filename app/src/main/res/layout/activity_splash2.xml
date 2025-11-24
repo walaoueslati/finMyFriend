@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0AA16B">
+
+    <!-- Conteneur pour centrer logo + texte -->
+    <LinearLayout
+        android:id="@+id/center_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Logo de l'app -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="App Logo"
+            app:srcCompat="@drawable/outline_add_location_24" />
+
+        <!-- Nom de l'application -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="FindMyFriend"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

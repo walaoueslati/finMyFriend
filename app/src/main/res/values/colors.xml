@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TON NOUVEAU THÈME VERT -->
+    <color name="colorPrimary">#0AA16B</color>
+    <color name="colorPrimaryDark">#087547</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <!-- Couleurs Material 2 utilisées par Android automatiquement -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Couleurs génériques -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

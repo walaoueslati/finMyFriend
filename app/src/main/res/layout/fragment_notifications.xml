@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Position"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Pseudo -->
+    <EditText
+        android:id="@+id/editPseudo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pseudo"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Numéro -->
+    <EditText
+        android:id="@+id/editNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Numéro"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/editPseudo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Location -->
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Longitude -->
+    <EditText
+        android:id="@+id/editLongitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Latitude -->
+    <EditText
+        android:id="@+id/editLatitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editLongitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Bouton Add -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editLatitude" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
